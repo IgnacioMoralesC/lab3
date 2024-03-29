@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <title>Y</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+  </head>
+
+  <body>
+    <div class= "container">
+      <%= yield %>
+    </div>
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2024 Personal Webpage (All rights reserved)</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a href="https://www.instagram.com">Instagram</a>
+            </div>
+            <div class="col-sm">
+              <a href="https://www.facebook.com">Facebook</a>
+            </div>
+            <div class="col-sm">
+              <a href="https://www.linkedin.com">Linkedin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
