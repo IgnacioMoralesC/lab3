@@ -9,6 +9,13 @@
     <div class="form-group">
         <label>Last Name</label>
         <input type="text" class="form-control" placeholder="Write your lastname"></input>
+        <label>Name</label>
+        <input type="text" class="form-control" placeholder="Write your name" id="Form"></input>
+    </div>
+
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" placeholder="Write your lastname" id="Form"></input>
     </div>
 
     <div class="form-group">
@@ -21,3 +28,32 @@
     </div>
     <button type="submit" class="btn btn-primary">Send</button>
 </form>
+        <input type="email" class="form-control" placeholder="Enter email" id="Form"></input>
+    </div>
+
+    <div class="form-group">
+        <label>Message</label>
+        <input type="text" class="form-control" placeholder="Write down your message" id="Form"></input>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary" id="button" onclick="check()">Send</button>
+    </div>
+
+</form>
+
+
+<script>
+    var formFilledMessage = "Thank you for your message, we will contact you soon.";
+    var formEmptyMessage = "Error: The form was not fully filled";
+
+    function check() {
+        var formInput = document.getElementById('Form').value;
+
+        if (formInput.trim() !== "") {
+            alert(formFilledMessage);
+        } else {
+            alert(formEmptyMessage);
+        }
+    }
+</script>
